@@ -144,6 +144,17 @@ body {
     animation: glow 2s ease-in-out infinite alternate;
 }
 
+.rise-logo-img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 20px var(--rise-red))
+            drop-shadow(0 0 40px var(--rise-red))
+            drop-shadow(0 0 60px var(--rise-red))
+            drop-shadow(0 0 80px var(--rise-red));
+    animation: glowImage 2s ease-in-out infinite alternate;
+}
+
 @keyframes glow {
     from {
         text-shadow: 
@@ -157,6 +168,20 @@ body {
             0 0 60px var(--rise-red),
             0 0 90px var(--rise-red),
             0 0 120px var(--rise-red);
+    }
+}
+
+@keyframes glowImage {
+    from {
+        filter: drop-shadow(0 0 20px var(--rise-red))
+                drop-shadow(0 0 40px var(--rise-red))
+                drop-shadow(0 0 60px var(--rise-red));
+    }
+    to {
+        filter: drop-shadow(0 0 30px var(--rise-red))
+                drop-shadow(0 0 60px var(--rise-red))
+                drop-shadow(0 0 90px var(--rise-red))
+                drop-shadow(0 0 120px var(--rise-red));
     }
 }
 
@@ -869,6 +894,10 @@ body {
         letter-spacing: 3px;
     }
 
+    .rise-logo-img {
+        max-width: 280px;
+    }
+
     .hero-title {
         font-size: 28px;
         gap: 8px;
@@ -1144,6 +1173,10 @@ body {
         letter-spacing: 2px;
     }
 
+    .rise-logo-img {
+        max-width: 240px;
+    }
+
     .hero-title {
         font-size: 24px;
     }
@@ -1177,7 +1210,7 @@ body {
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="rise-logo-container">
-                <h1 class="rise-logo">RISE</h1>
+                <img src="https://rise-rc.com/wp/wp-content/themes/rise-theme/image/logo.png" alt="RISE - Extreme Fight Game" class="rise-logo-img">
             </div>
             <h2 class="hero-title">
                 <span class="hero-title-line1">チケット購入が、</span>
@@ -1505,7 +1538,7 @@ body {
                     <a href="https://www.instagram.com/rise_2003official/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.youtube.com/@rise_2003" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <a href="https://www.youtube.com/user/RISEonTV" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                         <i class="fab fa-youtube"></i>
                     </a>
                     <a href="https://lin.ee/mlHwpJP" target="_blank" rel="noopener noreferrer" aria-label="LINE">
