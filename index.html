@@ -229,6 +229,31 @@ body {
     to { opacity: 0.9; }
 }
 
+.hero-announcement {
+    margin-bottom: 30px;
+    padding: 20px 30px;
+    background: rgba(230, 0, 18, 0.15);
+    border: 2px solid var(--rise-red);
+    border-radius: 15px;
+    animation: fadeIn 1s ease-out 1s forwards;
+    opacity: 0;
+}
+
+.announcement-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--rise-red);
+    margin-bottom: 8px;
+    text-shadow: 0 0 10px rgba(230, 0, 18, 0.5);
+}
+
+.announcement-detail {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    opacity: 0.95;
+}
+
 .cta-button {
     display: inline-flex;
     align-items: center;
@@ -906,7 +931,21 @@ body {
     .hero-subtitle {
         font-size: 15px;
         line-height: 1.6;
-        margin-bottom: 30px;
+        margin-bottom: 24px;
+    }
+
+    .hero-announcement {
+        margin-bottom: 24px;
+        padding: 16px 20px;
+    }
+
+    .announcement-text {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .announcement-detail {
+        font-size: 14px;
     }
 
     .scroll-indicator {
@@ -1185,6 +1224,18 @@ body {
         font-size: 14px;
     }
 
+    .hero-announcement {
+        padding: 14px 16px;
+    }
+
+    .announcement-text {
+        font-size: 16px;
+    }
+
+    .announcement-detail {
+        font-size: 13px;
+    }
+
     .section-title {
         font-size: 22px;
     }
@@ -1218,6 +1269,10 @@ body {
                 <span class="hero-title-line3">LINEで完結。</span>
             </h2>
             <p class="hero-subtitle">スマホがあれば、すべてが完了。<br>RISEのオンラインチケットがLINEで購入できるようになりました。</p>
+            <div class="hero-announcement">
+                <p class="announcement-text">11月2日より販売開始予定</p>
+                <p class="announcement-detail">（12月14日 RISE194 東京・後楽園ホールから販売開始）</p>
+            </div>
             <a href="https://lin.ee/mlHwpJP" class="cta-button primary-cta" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-line"></i> 今すぐチケットを購入
             </a>
